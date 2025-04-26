@@ -6,7 +6,8 @@
 #' that are suitable for biological data analysis, including protein sequences,
 #' histological images, and omics data.
 #'
-#' @param task Optional character string to filter models by task (e.g., "Protein Embedding").
+#' @param task Optional character string to filter models by task (e.g.,
+#' "Protein Embedding").
 #' @return A data.frame with information about available models.
 #' @export
 #'

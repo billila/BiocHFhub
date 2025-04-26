@@ -3,3 +3,4 @@
 export(download_hfbio_model)
 export(get_hfbio_model_parameters)
 export(list_hfbio_models)
+export(summarize_hfbio_model)

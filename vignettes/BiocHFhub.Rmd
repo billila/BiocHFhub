@@ -25,8 +25,11 @@ library(BiocHFhub)
 
 # Introduction
 
-The **BiocHFhub** package provides an interface between Bioconductor and the Hugging Face Hub for biological data analysis. 
-It allows users to list, download, and extract parameters from pretrained models for analyzing protein sequences, omics data, and histology images.
+The **BiocHFhub** package provides an interface between Bioconductor 
+and the Hugging Face Hub for biological data analysis. 
+It allows users to list, download, and extract parameters from 
+pretrained models for analyzing protein sequences, omics data, 
+and histology images.
 
 # List Available Models
 
@@ -35,7 +38,8 @@ models <- list_hfbio_models()
 print(models)
 ```
 
-You can also filter models by task, for example, to show only models for protein embedding:
+You can also filter models by task, for example, to show only models for 
+protein embedding:
 
 ```{r filter-models}
 protein_models <- list_hfbio_models(task = "Protein Embedding")
@@ -44,10 +48,12 @@ print(protein_models)
 
 # Download a Model File
 
-You can download specific files (e.g., configuration files) from a model repository:
+You can download specific files (e.g., configuration files) 
+from a model repository:
 
 ```{r download-model}
-config_path <- download_hfbio_model("facebook/esm2_t33_650M_UR50D", filename = "config.json")
+config_path <- download_hfbio_model("facebook/esm2_t33_650M_UR50D", 
+                                    filename = "config.json")
 print(config_path)
 ```
 
@@ -62,5 +68,15 @@ str(params)
 
 # Conclusion
 
-**BiocHFhub** simplifies the connection between R/Bioconductor and state-of-the-art pretrained models on Hugging Face, empowering biological researchers with modern machine learning tools.
+**BiocHFhub** simplifies the connection between R/Bioconductor and 
+state-of-the-art pretrained models on Hugging Face, empowering biological 
+researchers with modern machine learning tools.
 
+# Session Info
+
+<details>
+    <summary>Click here for Session Info</summary>
+```{r}
+sessionInfo()
+```
+</details>

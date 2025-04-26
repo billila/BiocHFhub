@@ -1,5 +1,3 @@
-# File: R/get_hfbio_model_parameters.R
-
 #' Get Model Parameters from Hugging Face Hub
 #'
 #' This function downloads and reads the configuration file (config.json)
@@ -16,7 +14,7 @@
 get_hfbio_model_parameters <- function(model_id) {
     if (!requireNamespace("jsonlite", quietly = TRUE)) {
         stop("The 'jsonlite' package is required but not installed.
-             Please install it first.")
+                Please install it first.")
     }
 
     config_path <- download_hfbio_model(model_id, filename = "config.json")
