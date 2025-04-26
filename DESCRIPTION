@@ -1,0 +1,20 @@
+Package: BiocHFhub
+Type: Package
+Title: Interface Between Bioconductor and Hugging Face Hub for Biological Data Analysis
+Version: 0.99.0
+Authors@R: person("Ilaria", "Billato", email = "ilaria.billato@phd.unipd.it", role = c("aut", "cre"))
+Description: Provides access to pretrained models hosted on Hugging Face Hub for the analysis of biological data, including images, proteins, and omics. Models are curated to ensure compatibility with Bioconductor standards.
+License: GPL-3
+Imports: hfhub, 
+  jsonlite, 
+  SummarizedExperiment, 
+  SingleCellExperiment, 
+  httr, 
+  magick
+Suggests: BiocStyle, 
+  knitr, 
+  rmarkdown, 
+  testthat
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
